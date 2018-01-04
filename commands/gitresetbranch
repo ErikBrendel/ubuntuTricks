@@ -1,0 +1,13 @@
+DEV_NAME=develop
+
+branch_name=$(git symbolic-ref -q HEAD)
+branch_name=${branch_name##refs/heads/}
+branch_name=${branch_name:-HEAD}
+
+if [ "$branch_name" != "HEAD" ]; then
+	
+	zenity --question --text "Do you really want to reset your local branch to the remote version?" && git checkout $DEV_NAME && git branch -D $branch_name && git pull && git checkout $branch_name
+	
+else
+	echo "Not on branch!"
+fi
