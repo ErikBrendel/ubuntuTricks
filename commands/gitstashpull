@@ -1,1 +1,2 @@
-git stash && git pull && git stash pop
+# pulls using the stash, to keep your local changes
+git stash save "gitstashpull" && git pull && git stash pop

@@ -1,1 +1,3 @@
+# moves the current staged changes into the last commit and pushes them
+# use with care
 git commit --amend --no-edit && git push -f

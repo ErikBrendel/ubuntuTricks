@@ -1,1 +1,2 @@
+#pipe commands to this one to get their output into the clipboard
 xclip -sel clip

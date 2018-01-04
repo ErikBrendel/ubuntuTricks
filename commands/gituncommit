@@ -1,1 +1,2 @@
+# un-does the last commit but leaves the changes in your working directory
 git reset HEAD~

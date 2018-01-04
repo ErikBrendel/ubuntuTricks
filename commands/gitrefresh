@@ -1,3 +1,5 @@
+# updates your develop branch, and merges it into your active branch
+
 DEV_NAME=develop
 
 branch_name=$(git symbolic-ref -q HEAD)

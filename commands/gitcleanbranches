@@ -1,2 +1,3 @@
+# deletes all branches which no longer have an upstream branch (all branches that are done)
 git fetch -p
 git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -d

@@ -1,3 +1,5 @@
+# reset your current branch to the version on the remote (for when you fucked up badly)
+
 DEV_NAME=develop
 
 branch_name=$(git symbolic-ref -q HEAD)

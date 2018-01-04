@@ -1,1 +1,2 @@
+# show the diff between two files
 git diff --word-diff=color --minimal --no-index "$@"

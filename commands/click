@@ -1,1 +1,2 @@
+# executes the same action as double-clicking a file / folder from your file browser
 xdg-open "$@"
