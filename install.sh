@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install needed programs
-sudo apt install zenity xclip
+sudo apt install zenity xclip festival
 
 # copy commands to where they can get found
 sudo chmod +x commands/*
