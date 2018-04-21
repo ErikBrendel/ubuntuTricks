@@ -1,1 +1,1 @@
-git stash save "synccommit $@" #&& git pull && git stash pop --index && git commit $@ && git push
+git stash save "synccommit $@" && git pull && git stash pop --index && git commit $@ && git push
