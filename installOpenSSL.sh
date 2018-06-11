@@ -1,7 +1,7 @@
 sudo apt install wget
 wget https://www.openssl.org/source/openssl-1.0.2-latest.tar.gz
 tar -zxf openssl-1.0.2-latest.tar.gz
-cd openssl-1.0.2n
+cd openssl-1.0.2o
 ./config
 make
 make test
