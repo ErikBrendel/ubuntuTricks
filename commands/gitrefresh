@@ -1,18 +1,18 @@
 # updates your develop branch, and merges it into your active branch
 
-DEV_NAME=develop
+DEV_NAME=${1:-develop}
 
 branch_name=$(git symbolic-ref -q HEAD)
 branch_name=${branch_name##refs/heads/}
 branch_name=${branch_name:-HEAD}
 
 if [ "$branch_name" != "HEAD" ]; then
-	
-	git checkout $DEV_NAME
-	git pull
-	git checkout $branch_name
-	git merge $DEV_NAME | grep --color=auto -C 100 "CONFLICT"
-	
+  
+  git checkout $DEV_NAME
+  git pull
+  git checkout $branch_name
+  git merge $DEV_NAME | grep --color=auto -C 100 "CONFLICT"
+  
 else
-	echo "Not on branch!"
+  echo "Not on branch!"
 fi
