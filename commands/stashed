@@ -1,0 +1,3 @@
+# execute the given command in stashed mode:
+# stash changes, exec command, pop changes again
+git stash save "stashed" && ( $@ ; git stash pop)
