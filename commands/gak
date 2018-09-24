@@ -1,0 +1,2 @@
+# add all changes to the index and open gitk to view em
+git add . && gitk
