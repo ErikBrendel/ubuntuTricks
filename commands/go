@@ -1,0 +1,7 @@
+# lets you google things from the cli
+search=""
+for term in $@; do
+    search="$search%20$term"
+done
+echo "Googling: $@"
+xdg-open "http://www.google.com/search?q=$search"
