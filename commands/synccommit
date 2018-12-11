@@ -1,1 +1,2 @@
+# one-click solution to upload everything that you have changed locally
 git stash save "synccommit $@" && git pull && git stash pop --index && git commit $@ && git push
