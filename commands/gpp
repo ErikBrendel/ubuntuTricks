@@ -1,0 +1,2 @@
+# does a git pull and push
+git pull --no-edit && git push
