@@ -1,0 +1,2 @@
+# git will no longer show file mode changes as changes for this project
+git config core.filemode false
